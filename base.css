@@ -1,0 +1,19 @@
+body {
+	background-color: #c3f9ff;
+}
+
+.bg-vars,
+.typography-vars,
+.cta-vars {
+	background-color: #fff5f5;
+}
+
+/* Background Images Vars Default Styling */
+.bg-vars .bg-1,
+.bg-vars .bg-2,
+.bg-vars .bg-3 {
+	width: 100%;
+	height: 400px;
+	background-repeat: none;
+	background-size: cover;
+}
