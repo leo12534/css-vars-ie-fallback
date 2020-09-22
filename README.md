@@ -6,5 +6,6 @@
 
 **The goal is to implement that as well**
 
-**Created by Leo**
+**Created by Leandro**
 
+<img width="180" alt="Screen Shot 2020-09-22 at 6 52 30 PM" src="https://user-images.githubusercontent.com/3374334/93918798-c8df5f00-fd04-11ea-9748-56a455a31207.png">
