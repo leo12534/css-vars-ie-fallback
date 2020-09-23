@@ -1,68 +1,61 @@
 :root {
 	/* Text Colors */
-	--text-white: #fff;
-	--text-event-primary: purple;
-	--text-event-secondary: orange;
-	--text-event-tertiary: red;
+	--text-event-primary: #ff495a;
+	--text-event-secondary: #618b4a;
 
 	/* Border Variables */
-	--border-primary: 5px solid red;
-	--border-secondary: 5px solid orange;
-	--border-tertiary: 5px solid green;
+	--border-event-primary: 3px solid #ff495a;
+	--border-event-secondary: 3px solid #618b4a;
 
 	/* background-images */
-	--bg-img-1: url('https://picsum.photos/id/100/200/300/?blur=10');
-	--bg-img-2: url('https://picsum.photos/id/110/200/300/?blur=10');
-	--bg-img-3: url('https://picsum.photos/id/130/200/300/?blur=10');
+	--bg-primary: url('https://picsum.photos/id/100/200/300/?blur=10');
+	--bg-secondary: url('https://picsum.photos/id/110/200/300/?blur=10');
 
 	/* CTA button colors */
-	--btn-event: purple;
-	--btn-event-hover: pink;
+	--btn-event-primary: #ff495a;
+	--btn-event-primary-hover: #4597db;
 
-	--btn-event-alt: pink;
-	--btn-event-alt-hover: purple;
+	--btn-event-secondary: #618b4a;
+	--btn-event-secondary-hover: #451f55;
 }
 
-/* Changing BG Using Variables */
-.bg-vars .bg-1 {
-	background-image: var(--bg-img-1);
-	border: var(--border-primary);
+/* Updating Backgroung Images */
+.bg-primary {
+	background-image: var(--bg-primary);
 }
 
-.bg-vars .bg-2 {
-	background-image: var(--bg-img-2);
-	border: var(--border-secondary);
+.bg-secondary {
+	background-image: var(--bg-secondary);
 }
 
-.bg-vars .bg-3 {
-	background-image: var(--bg-img-3);
-	border: var(--border-tertiary);
+/* Styling Border Classes */
+.border-event-primary {
+	border: var(--border-event-primary);
+}
+.border-event-secondary {
+	border: var(--border-event-secondary);
 }
 
-/* Using Vars to Change Font Text */
-.typography-vars .text-event-primary {
+/* Styling Text Event Colors */
+.text-event-primary {
 	color: var(--text-event-primary);
 }
-.typography-vars .text-event-secondary {
+.text-event-secondary {
 	color: var(--text-event-secondary);
 }
-.typography-vars .text-event-tertiary {
-	color: var(--text-event-tertiary);
+
+/* Style Primary Event CTAs */
+.btn-event-primary {
+	background-color: var(--btn-event-primary);
+}
+.btn-event-primary:hover {
+	background-color: var(--btn-event-primary-hover);
 }
 
-/* Using Vars to change CTA colors */
-.cta-vars .btn-event {
-	background-color: var(--btn-event);
-	color: var(--text-white);
+/* Style Secondary Event CTAs */
+.btn-event-secondary {
+	background-color: var(--btn-event-secondary);
 }
-.cta-vars .btn-event:hover {
-	background-color: var(--btn-event-hover);
-}
-
-.cta-vars .btn-event-alt {
-	background-color: var(--btn-event-alt);
-	color: var(--text-white);
-}
-.cta-vars .btn-event-alt:hover {
-	background-color: var(--btn-event-alt-hover);
+.btn-event-secondary:hover {
+	background-color: var(--btn-event-secondary-hover);
 }
