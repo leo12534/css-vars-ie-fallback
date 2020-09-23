@@ -19,7 +19,9 @@
       <div class="container">
         <div class="col-md-12 px-0 text-center">
           <h1 class="display-4 font-weight-bold">CSS Variable With IE Fallback </h1>
-          <p class="lead my-3">CSS Variable Demo using
+          <p class="lead my-3">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties" target=_blank>CSS Variables</a>
+            Demo using
             <a href="https://github.com/jhildenbiddle/css-vars-ponyfill" target="_blank">css-vars-ponyfill</a> library
             for IE fallback to help theme our sites faster
           </p>
@@ -41,17 +43,19 @@
       </div>
       <div class="row mb-2">
         <div class="col-md-6">
-
           <div class="controls">
-            <label for="input-primary"><p class="font-weight-light small">--event-primary: </p> </label>
+            <label for="input-primary">
+                            <p class="font-weight-light small">--event-primary: </p>
+                        </label>
             <input id="input-primary" type="color" name="event-primary" value="#ff495a">
             <br>
-            <label for="input-primary-alt"><p class="font-weight-light small">
-				--event-primary-alt:
-			</p></label>
+            <label for="input-primary-alt">
+                            <p class="font-weight-light small">
+                                --event-primary-alt:
+                            </p>
+                        </label>
             <input id="input-primary-alt" type="color" name="event-primary-alt" value="#4597db">
-		  </div>
-
+                    </div>
             <div
               class="row no-gutters rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative border-event-primary">
               <div class="col-7 p-4 d-flex flex-column position-static">
@@ -70,16 +74,19 @@
             </div>
           </div>
           <div class="col-md-6">
-
             <div class="controls">
-              <label for="input-secondary"><p class="font-weight-light small">--event-secondary: </p> </label>
+              <label for="input-secondary">
+                            <p class="font-weight-light small">--event-secondary: </p>
+                        </label>
               <input id="input-secondary" type="color" name="event-secondary" value="#618b4a">
               <br>
-              <label for="input-secondary-alt"><p class="font-weight-light small">
-					--event-secondary-alt:
-				</p></label>
+              <label for="input-secondary-alt">
+                            <p class="font-weight-light small">
+                                --event-secondary-alt:
+                            </p>
+                        </label>
               <input id="input-secondary-alt" type="color" name="event-secondary-alt" value="#451f55">
-			  </div>
+                    </div>
               <div
                 class="row no-gutters rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative border-event-secondary">
                 <div class="col-7 p-4 d-flex flex-column position-static">
@@ -97,6 +104,81 @@
                 </div>
               </div>
             </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col-md-12">
+              <h2 class="font-weight-light h3">How Does it Work?</h2>
+
+              <p class="h6 font-weight-bold">Create your Variables on the :root pseudo-class </p>
+
+              <pre><code>
+:root {
+	/* Brand Colors */
+	--event-primary: #ff495a;
+	--event-primary-alt: #4597db;
+
+	--event-secondary: #618b4a;
+	--event-secondary-alt: #451f55;
+
+	/* background-images */
+	--bg-primary: url('https://picsum.photos/id/100/200/300/?blur=10');
+	--bg-secondary: url('https://picsum.photos/id/800/200/300/?blur=10');
+}
+			  </code></pre>
+
+              <p class="h6 font-weight-bold">Add Your Variables to your CSS classes like the examples below</p>
+
+              <pre><code>
+/* Updating Backgroung Images */
+.bg-primary {
+	background-image: var(--bg-primary);
+}
+
+.bg-secondary {
+	background-image: var(--bg-secondary);
+}
+
+/* Styling Border Classes */
+.border-event-primary {
+	border: 2px solid var(--event-primary);
+}
+.border-event-secondary {
+	border: 2px solid var(--event-secondary);
+}
+
+/* Styling Text Event Colors */
+.text-event-primary {
+	color: var(--event-primary);
+}
+.text-event-primary-alt {
+	color: var(--event-primary-alt);
+}
+.text-event-secondary {
+	color: var(--event-secondary);
+}
+.text-event-secondary-alt {
+	color: var(--event-secondary-alt);
+}
+
+/* Style Primary Event CTAs */
+.btn-event-primary {
+	background-color: var(--event-primary);
+}
+.btn-event-primary:hover {
+	background-color: var(--event-primary-alt);
+}
+
+/* Style Secondary Event CTAs */
+.btn-event-secondary {
+	background-color: var(--event-secondary);
+}
+.btn-event-secondary:hover {
+	background-color: var(--event-secondary-alt);
+}
+			  </code></pre>
+            </div>
+
+
           </div>
         </div>
   </header>
@@ -119,8 +201,6 @@
     });
 
   </script>
-
-
   <!-- Color picker scripts - Not for Production -->
   <script>
     const inputs = document.querySelectorAll('.controls input');
