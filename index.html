@@ -10,97 +10,85 @@
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" href="base.css">
   <link rel="stylesheet" href="style.css">
-  <title>Testing CSS Variables</title>
+  <title>CSS Variables with IE Fallback</title>
 </head>
 
 <body>
 
+  <header class="container-fluid p-0">
+    <div class="jumbotron rounded-0 p-5 p-md-5 text-white bg-dark">
+      <div class="container">
+
+        <div class="col-md-12 px-0 text-center">
+          <h1 class="display-3 font-weight-bold">CSS Variable With IE Fallback        </h1>
+          <p class="lead my-3">CSS Variable Demo page using
+            <a href="https://github.com/jhildenbiddle/css-vars-ponyfill" target="_blank">css-vars-ponyfill</a> library
+            for IE fallback.
+          </p>
+          <p class="btn btn-primary lead mb-0">
+            <a target="_blank" href="https://github.com/leo12534/project-css-vars" class="text-white font-weight-bold">Github</a>
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+
   <header class="container-fluid p-5" class="header-info">
     <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h1 class="display-3 text-center font-weight-bold"> CSS Variable Test</h1>
-          <p class="lead text-center"> CSS Variable Demo page using css-vars-ponyfill library for IE fallback. </p>
+      <div class="row mb-2">
+        <div class="col-md-6">
+          <div
+            class="row no-gutters rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative border-event-primary">
+            <div class="col-7 p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-event-primary">h1 <span class="small text-muted font-italic">.text-event-primary</span> </strong>
+              <h3 class="mb-0 text-event-primary">h2 <span class="h6 text-muted font-italic">.text-event-primary</span></h3>
+
+              <p class="card-text mb-auto mt-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est facilis ut
+                ipsam esse similique officiis!</p>
+              <button type="button" class="btn btn-md btn-event-primary mt-2">Click <span class="small text-white font-italic">.btn-event-primary</span></button>
+            </div>
+            <div class="col-5 bg-primary">
+
+              <!-- <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c"></rect>
+                <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+              </svg> -->
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div
+            class="row no-gutters rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative border-event-secondary">
+            <div class="col-7 p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-event-secondary">h1 <span class="small text-muted font-italic">.text-event-secondary</span> </strong>
+              <h3 class="mb-0 text-event-secondary">h2 <span class="h6 text-muted font-italic">.text-event-secondary</span></h3>
+
+              <p class="card-text mb-auto mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur debitis
+                consequatur, unde aliquam iste dolores?</p>
+              <button type="button" class="btn btn-md btn-event-secondary mt-2">Click <span class="small text-white font-italic">.btn-event-secondary</span></button>
+            </div>
+            <div class="col-5 bg-secondary">
+
+              <!-- <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg"
+                  preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#55595c"></rect>
+                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+                </svg> -->
+
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </header>
 
-  <section class="container-fluid p-5 bg-vars">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h3 class="font-weight-bold">Hero Section</h3>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-12">
-          <h6>Background Image Variables and Borders</h6>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="bg-1 text-white font-weight-bold">BG 1</div>
-        </div>
-        <div class="col-md-4">
-          <div class="bg-2 text-white font-weight-bold">BG 2</div>
-        </div>
-        <div class="col-md-4">
-          <div class="bg-3 text-white font-weight-bold">BG 3</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="container-fluid p-5 typography-vars">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h3 class="font-weight-bold">Typography Section</h3>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <p class="text-event-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ullam?</p>
-          <p class="text-event-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ullam?
-          </p>
-          <p class="text-event-tertiary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ullam?</p>
-
-
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <section class="container-fluid p-5 cta-vars">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h3 class="font-weight-bold">CTAs Section</h3>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <button type="button" class="btn btn-lg btn-event">Primary</button>
-          <button type="button" class="btn btn-lg btn-event-alt">Secondary</button>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- Optional JavaScript -->
-  <script src="js/css-vars-ponyfill.js"></script>
-  <script>
-    cssVars({
-      // Treat all browsers as legacy
-      onlyLegacy: false,
-    });
-
-  </script>
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
@@ -111,6 +99,17 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
   </script>
+
+  <!-- Optional JavaScript -->
+  <script src="js/css-vars-ponyfill.js"></script>
+  <script>
+    cssVars({
+      // Treat all browsers as legacy
+      onlyLegacy: true,
+    });
+
+  </script>
+
 </body>
 
 </html>
