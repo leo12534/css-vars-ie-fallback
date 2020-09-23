@@ -14,81 +14,92 @@
 </head>
 
 <body>
-
   <header class="container-fluid p-0">
-    <div class="jumbotron rounded-0 p-5 p-md-5 text-white bg-dark">
+    <div class="jumbotron rounded-0 p-4 text-white bg-dark">
       <div class="container">
-
         <div class="col-md-12 px-0 text-center">
-          <h1 class="display-3 font-weight-bold">CSS Variable With IE Fallback        </h1>
-          <p class="lead my-3">CSS Variable Demo page using
+          <h1 class="display-4 font-weight-bold">CSS Variable With IE Fallback </h1>
+          <p class="lead my-3">CSS Variable Demo using
             <a href="https://github.com/jhildenbiddle/css-vars-ponyfill" target="_blank">css-vars-ponyfill</a> library
-            for IE fallback.
+            for IE fallback to help theme our sites faster
           </p>
           <p class="btn btn-primary lead mb-0">
             <a target="_blank" href="https://github.com/leo12534/project-css-vars" class="text-white font-weight-bold">Github</a>
           </p>
         </div>
-
       </div>
     </div>
   </header>
-
-
-  <header class="container-fluid p-5" class="header-info">
+  <header class="container-fluid p-3" class="header-info">
     <div class="container">
+      <div class="row mb-3">
+        <div class="col-md-12">
+          <h4 class="font-weight-light text-center h3 ">Use Color Picker to update CSS Variables</h4>
+          <p class="text-center">--event-primary-alt and --event-secondary-alt update the hover states on the buttons
+          </p>
+        </div>
+      </div>
       <div class="row mb-2">
         <div class="col-md-6">
-          <div
-            class="row no-gutters rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative border-event-primary">
-            <div class="col-7 p-4 d-flex flex-column position-static">
-              <strong class="d-inline-block mb-2 text-event-primary">h1 <span class="small text-muted font-italic">.text-event-primary</span> </strong>
-              <h3 class="mb-0 text-event-primary">h2 <span class="h6 text-muted font-italic">.text-event-primary</span></h3>
 
-              <p class="card-text mb-auto mt-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est facilis ut
-                ipsam esse similique officiis!</p>
-              <button type="button" class="btn btn-md btn-event-primary mt-2">Click <span class="small text-white font-italic">.btn-event-primary</span></button>
+          <div class="controls">
+            <label for="input-primary"><p class="font-weight-light small">--event-primary: </p> </label>
+            <input id="input-primary" type="color" name="event-primary" value="#ff495a">
+            <br>
+            <label for="input-primary-alt"><p class="font-weight-light small">
+				--event-primary-alt:
+			</p></label>
+            <input id="input-primary-alt" type="color" name="event-primary-alt" value="#4597db">
+		  </div>
+
+            <div
+              class="row no-gutters rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative border-event-primary">
+              <div class="col-7 p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-event-primary">h1 <span class="small text-muted font-weight-light font-italic">--event-primary</span> </strong>
+                <h3 class="mb-0 text-event-primary">h2 <span class="small text-muted font-weight-light font-italic">--event-primary</span></h3>
+                <p class="card-text mb-auto mt-2 text-event-primary-alt">Lorem ipsum dolor sit, amet consectetur
+                  adipisicing elit. Est facilis
+                  ut
+                  ipsam esse similique officiis!
+                  <span class="small text-muted font-weight-light font-italic">--event-primary-alt</span></p>
+                <button type="button" class="btn btn-md btn-event-primary mt-2">Click <span class="small text-white font-italic">--event-primary</span></button>
+              </div>
+              <div class="col-5 bg-primary d-flex justify-content-center align-items-center">
+                <p class="text-event-primary font-weight-bold h4 ">--bg-primary</p>
+              </div>
             </div>
-            <div class="col-5 bg-primary">
+          </div>
+          <div class="col-md-6">
 
-              <!-- <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg"
-                preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#55595c"></rect>
-                <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
-              </svg> -->
-
+            <div class="controls">
+              <label for="input-secondary"><p class="font-weight-light small">--event-secondary: </p> </label>
+              <input id="input-secondary" type="color" name="event-secondary" value="#618b4a">
+              <br>
+              <label for="input-secondary-alt"><p class="font-weight-light small">
+					--event-secondary-alt:
+				</p></label>
+              <input id="input-secondary-alt" type="color" name="event-secondary-alt" value="#451f55">
+			  </div>
+              <div
+                class="row no-gutters rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative border-event-secondary">
+                <div class="col-7 p-4 d-flex flex-column position-static">
+                  <strong class="d-inline-block mb-2 text-event-secondary">h1 <span class="small text-muted font-weight-light font-italic">--event-secondary</span> </strong>
+                  <h3 class="mb-0 text-event-secondary">h2 <span class="small text-muted font-weight-light font-italic">--event-secondary</span></h3>
+                  <p class="card-text mb-auto mt-2 text-event-secondary-alt">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Tenetur
+                    debitis
+                    consequatur, unde aliquam iste dolores?
+                    <span class="small text-muted font-weight-light font-italic">--event-secondary-alt</span></p>
+                  <button type="button" class="btn btn-md btn-event-secondary mt-2">Click <span class="small text-white font-italic">--event-secondary</span></button>
+                </div>
+                <div class="col-5 bg-secondary d-flex justify-content-center align-items-center">
+                  <p class="text-event-secondary font-weight-bold h4 ">--bg-secondary</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-
-        <div class="col-md-6">
-          <div
-            class="row no-gutters rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative border-event-secondary">
-            <div class="col-7 p-4 d-flex flex-column position-static">
-              <strong class="d-inline-block mb-2 text-event-secondary">h1 <span class="small text-muted font-italic">.text-event-secondary</span> </strong>
-              <h3 class="mb-0 text-event-secondary">h2 <span class="h6 text-muted font-italic">.text-event-secondary</span></h3>
-
-              <p class="card-text mb-auto mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur debitis
-                consequatur, unde aliquam iste dolores?</p>
-              <button type="button" class="btn btn-md btn-event-secondary mt-2">Click <span class="small text-white font-italic">.btn-event-secondary</span></button>
-            </div>
-            <div class="col-5 bg-secondary">
-
-              <!-- <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg"
-                  preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#55595c"></rect>
-                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
-                </svg> -->
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
   </header>
-
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
@@ -99,7 +110,6 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
   </script>
-
   <!-- Optional JavaScript -->
   <script src="js/css-vars-ponyfill.js"></script>
   <script>
@@ -110,6 +120,19 @@
 
   </script>
 
+
+  <!-- Color picker scripts - Not for Production -->
+  <script>
+    const inputs = document.querySelectorAll('.controls input');
+
+    function updateVals() {
+      document.documentElement.style.setProperty(`--${this.name}`, this.value);
+    }
+
+    inputs.forEach(input => input.addEventListener('change', updateVals));
+    inputs.forEach(input => input.addEventListener('mousemove', updateVals));
+
+  </script>
 </body>
 
 </html>

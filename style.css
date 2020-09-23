@@ -1,22 +1,14 @@
 :root {
-	/* Text Colors */
-	--text-event-primary: #ff495a;
-	--text-event-secondary: #618b4a;
+	/* Brand Colors */
+	--event-primary: #ff495a;
+	--event-primary-alt: #4597db;
 
-	/* Border Variables */
-	--border-event-primary: 3px solid #ff495a;
-	--border-event-secondary: 3px solid #618b4a;
+	--event-secondary: #618b4a;
+	--event-secondary-alt: #451f55;
 
 	/* background-images */
 	--bg-primary: url('https://picsum.photos/id/100/200/300/?blur=10');
-	--bg-secondary: url('https://picsum.photos/id/110/200/300/?blur=10');
-
-	/* CTA button colors */
-	--btn-event-primary: #ff495a;
-	--btn-event-primary-hover: #4597db;
-
-	--btn-event-secondary: #618b4a;
-	--btn-event-secondary-hover: #451f55;
+	--bg-secondary: url('https://picsum.photos/id/800/200/300/?blur=10');
 }
 
 /* Updating Backgroung Images */
@@ -30,32 +22,38 @@
 
 /* Styling Border Classes */
 .border-event-primary {
-	border: var(--border-event-primary);
+	border: 2px solid var(--event-primary);
 }
 .border-event-secondary {
-	border: var(--border-event-secondary);
+	border: 2px solid var(--event-secondary);
 }
 
 /* Styling Text Event Colors */
 .text-event-primary {
-	color: var(--text-event-primary);
+	color: var(--event-primary);
+}
+.text-event-primary-alt {
+	color: var(--event-primary-alt);
 }
 .text-event-secondary {
-	color: var(--text-event-secondary);
+	color: var(--event-secondary);
+}
+.text-event-secondary-alt {
+	color: var(--event-secondary-alt);
 }
 
 /* Style Primary Event CTAs */
 .btn-event-primary {
-	background-color: var(--btn-event-primary);
+	background-color: var(--event-primary);
 }
 .btn-event-primary:hover {
-	background-color: var(--btn-event-primary-hover);
+	background-color: var(--event-primary-alt);
 }
 
 /* Style Secondary Event CTAs */
 .btn-event-secondary {
-	background-color: var(--btn-event-secondary);
+	background-color: var(--event-secondary);
 }
 .btn-event-secondary:hover {
-	background-color: var(--btn-event-secondary-hover);
+	background-color: var(--event-secondary-alt);
 }
