@@ -6,6 +6,11 @@ body {
 	color:white;
 }
 
+input {
+	width: 40px;
+	height:40px;
+  }
+
 /* Background Images Vars Default Styling */
 .bg-primary, .bg-secondary{
 	width: 100%;

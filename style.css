@@ -7,8 +7,8 @@
 	--event-secondary-alt: #451f55;
 
 	/* background-images */
-	--bg-primary: url('https://picsum.photos/id/100/200/300/?blur=10');
-	--bg-secondary: url('https://picsum.photos/id/800/200/300/?blur=10');
+	--bg-primary: url('https://picsum.photos/id/100/200/300/?blur=1');
+	--bg-secondary: url('https://picsum.photos/id/800/200/300/?blur=1');
 }
 
 /* Updating Backgroung Images */
