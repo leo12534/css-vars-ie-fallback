@@ -1,238 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<!-- Required meta tags -->
-		<meta charset="utf-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1, shrink-to-fit=no"
-		/>
-		<!-- Bootstrap CSS -->
-		<link
-			rel="stylesheet"
-			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-			integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-			crossorigin="anonymous"
-		/>
-		<link rel="stylesheet" href="base.css" />
-		<link rel="stylesheet" href="style.css" />
-		<title>CSS Variables with IE Fallback</title>
-	</head>
 
-	<body>
-		<header class="container-fluid p-0">
-			<div class="jumbotron rounded-0 p-4 text-white bg-dark">
-				<div class="container">
-					<div class="col-md-12 px-0 text-center">
-						<h1 class="display-4 font-weight-bold">
-							CSS Variable With IE Fallback
-						</h1>
-						<p class="lead my-3">
-							<a
-								href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties"
-								target="_blank"
-								>CSS Variables</a
-							>
-							Demo using
-							<a
-								href="https://github.com/jhildenbiddle/css-vars-ponyfill"
-								target="_blank"
-								>css-vars-ponyfill</a
-							>
-							library for IE fallback.
-						</p>
-						<p class="btn btn-primary lead mb-0">
-							<a
-								target="_blank"
-								href="https://github.com/leo12534/project-css-vars"
-								class="text-white font-weight-bold"
-								>Github</a
-							>
-						</p>
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+	<link rel="stylesheet" href="base.css" />
+	<link rel="stylesheet" href="style.css" />
+	<title>CSS Variables with IE Fallback</title>
+</head>
+
+<body>
+	<header class="container-fluid p-0">
+		<div class="jumbotron rounded-0 p-4 text-white bg-dark">
+			<div class="container">
+				<div class="col-md-12 px-0 text-center">
+					<h1 class="display-4 font-weight-bold">
+						CSS Variable With IE Fallback
+					</h1>
+					<p class="lead my-3">
+						<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties" target="_blank">CSS Variables</a> Demo using <a href="https://github.com/jhildenbiddle/css-vars-ponyfill" target="_blank">css-vars-ponyfill</a>
+						library for IE fallback.
+					</p>
+					<p class="btn btn-primary lead mb-0">
+						<a target="_blank" href="https://github.com/leo12534/project-css-vars" class="text-white font-weight-bold">Github</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<header class="container-fluid p-3" class="header-info">
+		<div class="container">
+			<div class="row mb-3">
+				<div class="col-md-12">
+					<h4 class="font-weight-light text-center h3">
+						Using CSS Variables to help us theme our sites.
+					</h4>
+					<h3></h3>
+					<p class="text-center">Notes: --event-primary-alt and --event-secondary-alt update the hover states
+						on
+						the buttons
+					</p>
+				</div>
+			</div>
+			<div class="row mb-2">
+				<div class="col-md-6">
+					<div class="controls">
+						<label for="input-primary">
+							<p class="font-weight-light">--event-primary:</p>
+						</label>
+						<input class="input-hex" id="input-primary" type="color" name="event-primary" value="#ff495a" />
+						<br />
+						<label for="input-primary-alt">
+							<p class="font-weight-light">--event-primary-alt:</p>
+						</label>
+						<input class="input-hex" id="input-primary-alt" type="color" name="event-primary-alt" value="#4597db" />
+						<br />
+						<label for="primary-bg">
+							<p class="font-weight-light">
+								--bg-primary <br />
+								<small>Choose 1 - 1000 for a new image</small>
+							</p>
+						</label>
+						<input class="input-url" id="primary-bg" type="id" name="bg-primary" value="0" />
+					</div>
+					<div class="row no-gutters rounded overflow-hidden mt-2 flex-md-row mb-4 shadow-sm h-md-250 position-relative border-event-primary">
+						<div class="col-7 p-4 d-flex flex-column position-static">
+							<strong class="d-inline-block mb-2 text-event-primary">h1
+								<span class="small text-muted font-weight-light font-italic">--event-primary</span>
+							</strong>
+							<h3 class="mb-0 text-event-primary">
+								h2
+								<span class="small text-muted font-weight-light font-italic">--event-primary</span>
+							</h3>
+							<p class="card-text mb-auto mt-2 text-event-primary-alt">
+								Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est
+								facilis ut ipsam esse similique officiis!
+								<span class="small text-muted font-weight-light font-italic">--event-primary-alt</span>
+							</p>
+							<button type="button" class="btn btn-md btn-event-primary mt-2">
+								Click
+								<span class="small text-white font-italic">--event-primary</span>
+							</button>
+						</div>
+						<div class="col-5 bg-primary d-flex justify-content-center align-items-center">
+							<p class="text-event-primary font-weight-bold h4">
+								--bg-primary
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="controls">
+						<label for="input-secondary">
+							<p class="font-weight-light">--event-secondary:</p>
+						</label>
+						<input class="input-hex" id="input-secondary" type="color" name="event-secondary" value="#618b4a" />
+						<br />
+						<label for="input-secondary-alt">
+							<p class="font-weight-light">--event-secondary-alt:</p>
+						</label>
+						<input class="input-hex" id="input-secondary-alt" type="color" name="event-secondary-alt" value="#451f55" />
+						<br />
+						<label for="secondary-bg">
+							<p class="font-weight-light">
+								--bg-secondary <br />
+								<small>choose 1 - 1000 for a new image</small>
+							</p>
+						</label>
+						<input class="input-url" id="secondary-bg" type="id" name="bg-secondary" value="0" />
+					</div>
+					<div class="row no-gutters rounded overflow-hidden mt-2 flex-md-row mb-4 shadow-sm h-md-250 position-relative border-event-secondary">
+						<div class="col-7 p-4 d-flex flex-column position-static">
+							<strong class="d-inline-block mb-2 text-event-secondary">h1
+								<span class="small text-muted font-weight-light font-italic">--event-secondary</span>
+							</strong>
+							<h3 class="mb-0 text-event-secondary">h2 <span class="small text-muted font-weight-light font-italic">--event-secondary</span>
+							</h3>
+							<p class="card-text mb-auto mt-2 text-event-secondary-alt">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Tenetur debitis consequatur, unde aliquam iste dolores?
+								<span class="small text-muted font-weight-light font-italic">--event-secondary-alt</span>
+							</p>
+							<button type="button" class="btn btn-md btn-event-secondary mt-2">
+								Click
+								<span class="small text-white font-italic">--event-secondary</span>
+							</button>
+						</div>
+						<div class="col-5 bg-secondary d-flex justify-content-center align-items-center">
+							<p class="text-event-secondary font-weight-bold h4">
+								--bg-secondary
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
-		</header>
-		<header class="container-fluid p-3" class="header-info">
-			<div class="container">
-				<div class="row mb-3">
-					<div class="col-md-12">
-						<h4 class="font-weight-light text-center h3">
-							Using CSS Variables to help us theme our sites.
-						</h4>
-						<h3></h3>
-						<p class="text-center">
-							Notes: --event-primary-alt and --event-secondary-alt update the
-							hover states on the buttons
-						</p>
-					</div>
-				</div>
-				<div class="row mb-2">
-					<div class="col-md-6">
-						<div class="controls">
-							<label for="input-primary">
-								<p class="font-weight-light">--event-primary:</p>
-							</label>
-							<input
-								class="input-hex"
-								id="input-primary"
-								type="color"
-								name="event-primary"
-								value="#ff495a"
-							/>
-							<br />
-							<label for="input-primary-alt">
-								<p class="font-weight-light">--event-primary-alt:</p>
-							</label>
-							<input
-								class="input-hex"
-								id="input-primary-alt"
-								type="color"
-								name="event-primary-alt"
-								value="#4597db"
-							/>
-							<br />
-							<label for="primary-bg"
-								><p class="font-weight-light">
-									--bg-primary <br />
-									<small>choose 1 - 1000 for a new image</small>
-								</p>
-							</label>
-							<input
-								class="input-url"
-								id="primary-bg"
-								type="id"
-								name="bg-primary"
-								value="0"
-							/>
-						</div>
-						<div
-							class="row no-gutters rounded overflow-hidden mt-2 flex-md-row mb-4 shadow-sm h-md-250 position-relative border-event-primary"
-						>
-							<div class="col-7 p-4 d-flex flex-column position-static">
-								<strong class="d-inline-block mb-2 text-event-primary"
-									>h1
-									<span class="small text-muted font-weight-light font-italic"
-										>--event-primary</span
-									>
-								</strong>
-								<h3 class="mb-0 text-event-primary">
-									h2
-									<span class="small text-muted font-weight-light font-italic"
-										>--event-primary</span
-									>
-								</h3>
-								<p class="card-text mb-auto mt-2 text-event-primary-alt">
-									Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est
-									facilis ut ipsam esse similique officiis!
-									<span class="small text-muted font-weight-light font-italic"
-										>--event-primary-alt</span
-									>
-								</p>
-								<button type="button" class="btn btn-md btn-event-primary mt-2">
-									Click
-									<span class="small text-white font-italic"
-										>--event-primary</span
-									>
-								</button>
-							</div>
-							<div
-								class="col-5 bg-primary d-flex justify-content-center align-items-center"
-							>
-								<p class="text-event-primary font-weight-bold h4">
-									--bg-primary
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="controls">
-							<label for="input-secondary">
-								<p class="font-weight-light">--event-secondary:</p>
-							</label>
-							<input class="input-hex"
-								id="input-secondary"
-								type="color"
-								name="event-secondary"
-								value="#618b4a"
-							/>
-							<br />
-							<label for="input-secondary-alt">
-								<p class="font-weight-light">--event-secondary-alt:</p>
-							</label>
-							<input class="input-hex"
-								id="input-secondary-alt"
-								type="color"
-								name="event-secondary-alt"
-								value="#451f55"
-							/>
-							<br />
-							<label for="secondary-bg"
-								><p class="font-weight-light">
-									--bg-secondary <br />
-									<small>choose 1 - 1000 for a new image</small>
-								</p>
-							</label>
-							<input
-								class="input-url"
-								id="secondary-bg"
-								type="id"
-								name="bg-secondary"
-								value="0"
-							/>
-						</div>
-						<div
-							class="row no-gutters rounded overflow-hidden mt-2 flex-md-row mb-4 shadow-sm h-md-250 position-relative border-event-secondary"
-						>
-							<div class="col-7 p-4 d-flex flex-column position-static">
-								<strong class="d-inline-block mb-2 text-event-secondary"
-									>h1
-									<span class="small text-muted font-weight-light font-italic"
-										>--event-secondary</span
-									>
-								</strong>
-								<h3 class="mb-0 text-event-secondary">
-									h2
-									<span class="small text-muted font-weight-light font-italic"
-										>--event-secondary</span
-									>
-								</h3>
-								<p class="card-text mb-auto mt-2 text-event-secondary-alt">
-									Lorem ipsum dolor sit amet consectetur adipisicing elit.
-									Tenetur debitis consequatur, unde aliquam iste dolores?
-									<span class="small text-muted font-weight-light font-italic"
-										>--event-secondary-alt</span
-									>
-								</p>
-								<button
-									type="button"
-									class="btn btn-md btn-event-secondary mt-2"
-								>
-									Click
-									<span class="small text-white font-italic"
-										>--event-secondary</span
-									>
-								</button>
-							</div>
-							<div
-								class="col-5 bg-secondary d-flex justify-content-center align-items-center"
-							>
-								<p class="text-event-secondary font-weight-bold h4">
-									--bg-secondary
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row mt-5">
-					<div class="col-md-12">
-						<h2 class="font-weight-light h3">How Does it Work?</h2>
-
-						<p class="h6 font-weight-bold">
-							Create your Variables on the :root pseudo-class
-						</p>
-
-						<pre><code>
+			<div class="row mt-5">
+				<div class="col-md-12">
+					<h2 class="font-weight-light h3">How Does it Work?</h2>
+					<p class="h6 font-weight-bold">
+						Create your Variables on the :root pseudo-class
+					</p>
+					<pre>
+						<code>
 :root {
 	/* Brand Colors */
 	--event-primary: #ff495a;
@@ -246,12 +159,10 @@
 	--bg-secondary: url('https://picsum.photos/id/800/200/300/?blur=10');
 }
 			  </code></pre>
-
-						<p class="h6 font-weight-bold">
-							Add Your Variables to your CSS classes like the examples below
-						</p>
-
-						<pre><code>
+					<p class="h6 font-weight-bold">
+						Add Your Variables to your CSS classes like the examples below
+					</p>
+					<pre><code>
 /* Updating Backgroung Images */
 .bg-primary {
 	background-image: var(--bg-primary);
@@ -299,61 +210,54 @@
 	background-color: var(--event-secondary-alt);
 }
 			  </code></pre>
-					</div>
 				</div>
 			</div>
-		</header>
-		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-		<script
-			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-			integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-			crossorigin="anonymous"
-		></script>
-		<!-- Optional JavaScript -->
-		<script src="js/css-vars-ponyfill.js"></script>
-		<script>
-			cssVars({
-				// Treat all browsers as legacy
-				onlyLegacy: true,
-			});
-		</script>
-		<!-- Color picker scripts - Not for Production -->
-		<script>
-			const inputsHex = document.querySelectorAll('.input-hex');
-			const inputsUrl = document.querySelectorAll('.input-url');
+		</div>
+	</header>
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+	</script>
+	<!-- Optional JavaScript -->
+	<script src="js/css-vars-ponyfill.js"></script>
+	<script>
+		cssVars({
+			// Treat all browsers as legacy
+			onlyLegacy: true,
+		});
+	</script>
 
-			function updateHex() {
-				// Adding functionality to update hex color values
-				document.documentElement.style.setProperty(
-					`--${this.name}`,
-					this.value
-				);
-			}
+	<!-- Color picker scripts - Not for Production -->
+	<script>
+		const inputsHex = document.querySelectorAll('.input-hex');
+		const inputsUrl = document.querySelectorAll('.input-url');
 
-			function updateUrl() {
-				// Manipulating BG Image URL
-				const imageId = this.value;
-				const imageUrl = `url(https://picsum.photos/id/${imageId}/800/500/?blur=1)`;
-
-				// Adding Functionality to update BG IMAGE variable
-				document.documentElement.style.setProperty(`--${this.name}`, imageUrl);
-			}
-
-			inputsHex.forEach((input) => input.addEventListener('change', updateHex));
-			inputsHex.forEach((input) =>
-				input.addEventListener('mousemove', updateHex)
+		function updateHex() {
+			// Adding functionality to update hex color values
+			document.documentElement.style.setProperty(
+				`--${this.name}`,
+				this.value
 			);
-			inputsUrl.forEach((input) => input.addEventListener('change', updateUrl));
-		</script>
-	</body>
+		}
+
+		function updateUrl() {
+			// Manipulating BG Image URL
+			const imageId = this.value;
+			const imageUrl = `url(https://picsum.photos/id/${imageId}/800/500/?blur=1)`;
+
+			// Adding Functionality to update BG IMAGE variable
+			document.documentElement.style.setProperty(`--${this.name}`, imageUrl);
+		}
+
+		inputsHex.forEach((input) => input.addEventListener('change', updateHex));
+		inputsHex.forEach((input) =>
+			input.addEventListener('mousemove', updateHex)
+		);
+		inputsUrl.forEach((input) => input.addEventListener('change', updateUrl));
+	</script>
+</body>
+
 </html>
